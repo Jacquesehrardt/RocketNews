@@ -142,7 +142,7 @@ main{
 
 aside{
     grid-area: aside;
-    background-image: url(../Assets/read_news.jpg);
+    background-image: url(./Assets/read_news.jpg);
     background-position-x: 75%;
     background-position-y: center;
     background-repeat: no-repeat;
