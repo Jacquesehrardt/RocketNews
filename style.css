@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh; 
+    background-color: #121214;
+    display: grid;
+    grid-template-areas: 
+    "header aside"
+    "main aside";
+    grid-template-rows: 30px 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+header{
+    position: absolute;
+    width: 389px;
+    height: 94px;
+    left: 30px;
+    top: 50px;
+}
+main{
+    grid-area: main;
+    color: #E1E1E6;
+}
+
+.title, .input-email{
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.sub-title, .text, .title-email, .read{
+    font-family: 'Spartan', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.title{
+    position: absolute;
+    width: 566px;
+    height: 30.44px;
+    left: 36px;
+    top: 236px;
+    color: #04D361;
+    /*Font*/
+    font-size: 24px;
+    line-height: 28px;
+}
+.sub-title{
+    position: absolute;
+    width: 517px;
+    height: 16px;
+    left: 36px;
+    top: 275px;
+    /*Font*/
+    line-height: 16px;
+}
+.text{
+    position: absolute;
+    width: 647px;
+    height: 38px;
+    left: 36px;
+    top: 300px;
+    /*Font*/
+    font-weight: normal;
+    line-height: 19px;
+}
+
+.square{
+    position: absolute;
+    width: 5px;
+    height: 48px;
+    left: 36px;
+    top: 424px;
+    background-color: #04D361;
+}
+
+.title-email{
+    position: absolute;
+    width: 133px;
+    height: 19px;
+    left: 36px;
+    top: 388px;
+    /*Font*/
+    line-height: 138.73%;
+}
+
+.input-email{
+    position: absolute;
+    width: 750px;
+    height: 48px;
+    left: 41px;
+    top: 424px;
+    /*Font*/
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.button{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 786px;
+    top: 424px;
+    border: none;
+    background-color: #8257e5;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.send{
+    position: center;
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(91deg) brightness(113%) contrast(100%);
+}
+
+.read{
+    color: #8257e5;
+    position: absolute;
+    width: 167px;
+    height: 19px;
+    left: 36px;
+    top: 524px;
+    /*Font*/
+    line-height: 138.73%;
+}
+
+.arow{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 208px;
+    top: 522px;
+    filter: invert(38%) sepia(52%) saturate(3007%) hue-rotate(237deg) brightness(93%) contrast(93%);
+}
+
+aside{
+    grid-area: aside;
+    background-image: url(../melhorado/Assets/read_news.jpg);
+    background-position-x: 75%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
